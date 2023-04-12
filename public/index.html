@@ -2,78 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CMS Header</title>
-    <link rel="stylesheet" href="lab01css.css">
-    <link rel = "manifest" href="manifest.json">
 </head>
 <body>
     <header>
         <div class="logo">
-            <span>CMS</span>
-        </div>
-        <div class="notbuttn" id="notbuttn">         
-            <img class="bellImage" src="bell-icon.png" alt="Bell Icon"> 
-            <ul class="notification hidden">
-                <li><a href="#">Notification</a></li>
-            </ul>         
-        </div>
-        <div class="user" id="user">
-            <img src="user-icon.png" alt="User Icon">
-            <span>Username</span>
-            <ul class="user-menu hidden">
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Log-out</a></li>
-            </ul>
-        </div>
+            <span>Taranko Taras</span>
+        </div>       
     </header>
-    
-    <aside>
-        <ul class="sidebar-menu">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Student</a></li>
-            <li><a href="#">Task</a></li>
-        </ul>
-    </aside>
-    <div class="writing" id="writing">
-        <p class="writingp" id="writingp">Students</p>
-    </div>
-    <div class="add-button" id="add-button">
-        <button onclick="Addbuttn()">+</button>
-    </div>
-    <table class="table1" id="table1">
-        <tbody class="tbody1" id="tbody1">
-            <tr>
-                <td class="td1"><input type="checkbox"></td>
-                <td class="td1">Group</td>
-                <td class="td1">Name</td>
-                <td class="td1">Gender</td>
-                <td class="td1">Birthday</td>
-                <td class="td1">Status</td>
-                <td class="td1">Options</td>
-            </tr>
-        </tbody>
-    </table>
-    
-  
-    <div id="modal" class="modal hidden">
-        <div class="modal-content">
-            <span onclick="Close()" class="close-button">&times;</span>
-            <h2 id = "textHelper1">Add New Record</h2>
-            <form action="server.php" method="POST">
-                <label for="group">Group:</label><br>
-                <input type="text" id="group" name="group" required><br>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br>
-                <label for="gender">Gender:</label><br>
-                <input type="text" id="gender" name="gender" required><br>
-                <label for="birthday">Birthday:</label><br>
-                <input type="text" id="birthday" name="birthday" required><br>
-                <label for="status">Status:</label><br>
-                <input type="text" id="status" name="status" required><br>
-                <input type="submit" value="Add">
-            </form>
-        </div>
-    </div>
-    <script src="lab01js.js"></script>
 </body>
 </html>
